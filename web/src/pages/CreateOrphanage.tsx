@@ -76,7 +76,7 @@ export default function CreateOrphanage() {
       <main>
         <form onSubmit={handleSubmit} className="create-orphanage-form">
           <fieldset>
-            <legend>Dados</legend>
+            <legend>Dados da Instituição</legend>
 
             <Map
               center={[-3.7429958, -38.5166363]}
@@ -139,7 +139,7 @@ export default function CreateOrphanage() {
           </fieldset>
 
           <fieldset>
-            <legend>Visitação</legend>
+            <legend>Sobre a Visitação</legend>
 
             <div className="input-block">
               <label htmlFor="instructions">Instruções</label>

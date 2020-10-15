@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../styles/pages/orphanages-map.css";
 import { Link } from "react-router-dom";
-import { FiPlus, FiArrowRight } from "react-icons/fi";
+import { FiPlus, FiArrowRight, FiArrowLeft } from "react-icons/fi";
 import { Map, TileLayer, Marker, Popup } from "react-leaflet";
 import mapMarkerImg from "../images/map-marker.svg";
 
@@ -71,6 +71,14 @@ function OrphanagesMap() {
           );
         })}
       </Map>
+
+      {/* <a type="button" onClick={handleChangeMapMode} className="switch-map-mode">
+        Modo Satélite
+      </a> */}
+
+      <Link to="/" className="landing-orphanage">
+        <FiArrowLeft size={24} color="#FFF" />
+      </Link>
 
       <Link to="/orphanages/create" className="create-orphanage">
         <FiPlus size={32} color="#fff" />
