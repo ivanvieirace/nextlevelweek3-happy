@@ -16,10 +16,10 @@
 
 <hr/>
 
-<h2 align="center">happy Web / Mobile (Em Desenvolvimento)</h2>
+<h2 align="center">happy Web / happy Mobile (Em Desenvolvimento)</h2>
 <h1 align="center">
 <img src="./github/happyweb.gif"  width="620" alt="happy Web">
-<img src="./github/happymobile.gif"  width="185" alt="happy Mobile">
+<img src="./github/happymobile.gif"  width="175" alt="happy Mobile">
 </h1>
 
 <hr/>
@@ -87,7 +87,7 @@ $ git clone https://github.com/ivanvieirace/nextlevelweek3-happy.git
 $ cd backend
 
 # Install Dependencies
-$ npm install
+$ yarn install
 
 # Run Application
 $ yarn startserver
@@ -102,7 +102,7 @@ Access API at http://localhost:3333/
 $ cd web
 
 # Install Dependencies
-$ npm install
+$ yarn install
 
 # Run Application
 $ yarn start
@@ -121,7 +121,7 @@ After, fork this repository and clone to your machine. Inside of the project's f
 $ cd mobile
 
 # Install Dependencies
-$ npm install
+$ yarn install
 
 # Run Application
 $ yarn start
