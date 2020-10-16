@@ -2,7 +2,7 @@
 <img src="./github/happylogomd.JPG" width="480" alt="happy">
 </h1>
 <h1 align="center">
-    Next Level Week #2</br>
+    Next Level Week #3</br>
     Node.js | ReactJS | React Native | Typescript
 </h1>
 <hr/>
@@ -16,10 +16,10 @@
 
 <hr/>
 
-<h2 align="center">happy Web / Mobile</h2>
+<h2 align="center">happy Web / Mobile (Em Desenvolvimento)</h2>
 <h1 align="center">
 <!-- <img src="./github/videoweb.gif"  width="620" alt="Proffy Web"> -->
-<img src="./github/happymobile.gif"  width="185" alt="Proffy Mobile">
+<img src="./github/happymobile.gif"  width="185" alt="happy Mobile">
 </h1>
 
 <hr/>
