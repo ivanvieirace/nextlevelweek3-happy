@@ -83,7 +83,7 @@ $ git clone https://github.com/ivanvieirace/nextlevelweek3-happy.git
 ## 📦 Run API
 
 ```bash
-# Go to Server folder
+# Go to Backend folder
 $ cd backend
 
 # Install Dependencies
