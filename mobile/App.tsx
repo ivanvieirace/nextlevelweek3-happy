@@ -48,7 +48,7 @@ export default function App() {
           style={styles.createOrphanageButton}
           onPress={() => {}}
         >
-          <Feather name="plus" size={20} color="fff" />
+          <Feather name="plus" size={20} color="#fff" />
         </TouchableOpacity>
       </View>
     </View>
@@ -86,12 +86,14 @@ const styles = StyleSheet.create({
 
     backgroundColor: "#fff",
     borderRadius: 28,
-    height: 46,
+    height: 56,
     paddingLeft: 24,
 
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
+
+    elevation: 3,
   },
   footerText: {
     color: "#8fa7b3",
