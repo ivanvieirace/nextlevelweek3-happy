@@ -18,7 +18,7 @@
 
 <h2 align="center">happy Web / Mobile (Em Desenvolvimento)</h2>
 <h1 align="center">
-<!-- <img src="./github/videoweb.gif"  width="620" alt="Proffy Web"> -->
+<img src="./github/happyweb.gif"  width="620" alt="happy Web">
 <img src="./github/happymobile.gif"  width="185" alt="happy Mobile">
 </h1>
 
