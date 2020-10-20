@@ -72,7 +72,7 @@ const styles = StyleSheet.create({
     position: "absolute",
     left: 24,
     right: 24,
-    bottom: 40,
+    bottom: 22,
   },
 
   nextButtonText: {
