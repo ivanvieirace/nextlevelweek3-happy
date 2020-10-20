@@ -63,7 +63,7 @@ export default function OrphanageData() {
     const { status } = await ImagePicker.requestCameraRollPermissionsAsync();
 
     if (status !== "granted") {
-      alert("Eita, precisamos de acesso as suas Fotos");
+      alert("Aviso, Precisamos de acesso as Fotos para o Cadastro");
       return;
     }
 
@@ -225,7 +225,7 @@ const styles = StyleSheet.create({
   },
 
   nextButton: {
-    backgroundColor: "#15c3d6",
+    backgroundColor: "#2473a8",
     borderRadius: 20,
     justifyContent: "center",
     alignItems: "center",

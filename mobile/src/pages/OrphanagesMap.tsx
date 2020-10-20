@@ -114,7 +114,7 @@ const styles = StyleSheet.create({
     position: "absolute",
     left: 24,
     right: 24,
-    bottom: 32,
+    bottom: 22,
 
     backgroundColor: "#fff",
     borderRadius: 28,
@@ -134,7 +134,7 @@ const styles = StyleSheet.create({
   createOrphanageButton: {
     width: 56,
     height: 56,
-    backgroundColor: "#15c3d6",
+    backgroundColor: "#2473a8",
     borderRadius: 20,
 
     justifyContent: "center",

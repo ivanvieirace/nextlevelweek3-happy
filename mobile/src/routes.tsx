@@ -1,4 +1,5 @@
 import React from "react";
+import { StatusBar, StyleSheet } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import OrphanagesMap from "./pages/OrphanagesMap";
@@ -12,10 +13,21 @@ const { Navigator, Screen } = createStackNavigator();
 export default function Routes() {
   return (
     <NavigationContainer>
+      <StatusBar barStyle="default" backgroundColor="#2993d1" />
       <Navigator
         screenOptions={{
-          headerShown: false,
+          headerShown: true,
           cardStyle: { backgroundColor: "#f2f3f5" },
+          title: "happy",
+          headerTintColor: "#fff",
+          headerStyle: {
+            backgroundColor: "#2993d1",
+          },
+          headerTitleStyle: {
+            fontFamily: "Nunito_700Bold",
+            fontSize: 20,
+          },
+          headerTitleAlign: "center",
         }}
       >
         <Screen name="OrphanagesMap" component={OrphanagesMap} />
@@ -34,7 +46,7 @@ export default function Routes() {
           component={SelectMapPosition}
           options={{
             headerShown: true,
-            header: () => <Header title="Selecione uma Posição no Mapa" />,
+            header: () => <Header title="Defina uma Posição no Mapa" />,
           }}
         />
         <Screen
@@ -42,7 +54,7 @@ export default function Routes() {
           component={OrphanageData}
           options={{
             headerShown: true,
-            header: () => <Header title="Informe os Dados" />,
+            header: () => <Header title="Informe os Dados da Instituição" />,
           }}
         />
       </Navigator>

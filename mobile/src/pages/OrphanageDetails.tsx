@@ -74,6 +74,7 @@ export default function OrphanageDetails() {
             );
           })}
         </ScrollView>
+        <Text style={styles.imagesText}>Deslize para ver as Fotos</Text>
       </View>
 
       <View style={styles.detailsContainer}>
@@ -156,6 +157,12 @@ const styles = StyleSheet.create({
 
   imagesContainer: {
     height: 240,
+  },
+
+  imagesText: {
+    textAlign: "center",
+    fontFamily: "Nunito_600SemiBold",
+    color: "#4D6F80",
   },
 
   image: {
