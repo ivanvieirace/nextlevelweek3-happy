@@ -13,10 +13,13 @@ export default class Orphanage{
   latitude: number;
   
   @Column()
-  longitude: number;
+  longitude: number;  
   
   @Column()
-  about: string;
+  whatsapp: string;
+  
+  @Column()
+  about: string;  
   
   @Column()
   instructions: string;
