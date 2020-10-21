@@ -16,7 +16,7 @@
 
 <hr/>
 
-<h2 align="center">happy Web / happy Mobile (Em Desenvolvimento)</h2>
+<h2 align="center">happy Web / happy Mobile</h2>
 <h1 align="center">
 <img src="./github/happyweb.gif"  width="620" alt="happy Web">
 <img src="./github/happymobile.gif"  width="175" alt="happy Mobile">
