@@ -52,18 +52,20 @@
 
   width: 144px;
   height: 34px;
-  background: #15c3d6;
+  background: #2473a8;
   border-radius: 20px;
 
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 
   transition: background-color 0.2s;
 }
 
 #page-map .switch-map-mode:hover {
-  background: #3f9ba5;
+  background: #17afeb;
+  cursor: pointer;
 }
 
 #page-map .landing-orphanage {

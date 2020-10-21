@@ -17,12 +17,27 @@ interface Orphanage {
 
 function OrphanagesMap() {
   const [orphanages, setOrphanages] = useState<Orphanage[]>([]);
+  const [mapMode, setMapMode] = useState(false);
+  const [textMapMode, setTextMapMode] = useState<String>("Satélite");
+  const [mapTheme, setMapTheme] = useState<String>("light-v10");
 
   useEffect(() => {
     api.get("orphanages").then((response) => {
       setOrphanages(response.data);
     });
   }, []);
+
+  function handleChangeMapMode() {
+    if (!mapMode) {
+      setTextMapMode("Mapa");
+      setMapMode(true);
+      setMapTheme("satellite-v9");
+      return;
+    }
+    setTextMapMode("Satélite");
+    setMapTheme("light-v10");
+    setMapMode(false);
+  }
 
   return (
     <div id="page-map">
@@ -46,7 +61,7 @@ function OrphanagesMap() {
       >
         {/* <TileLayer url="https://a.tile.openstreetmap.org/{z}/{x}/{y}.png"/> */}
         <TileLayer
-          url={`https://api.mapbox.com/styles/v1/mapbox/light-v10/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`}
+          url={`https://api.mapbox.com/styles/v1/mapbox/${mapTheme}/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`}
         />
 
         {orphanages.map((orphanage) => {
@@ -72,9 +87,13 @@ function OrphanagesMap() {
         })}
       </Map>
 
-      {/* <a type="button" onClick={handleChangeMapMode} className="switch-map-mode">
-        Modo Satélite
-      </a> */}
+      <a
+        type="button"
+        className="switch-map-mode"
+        onClick={handleChangeMapMode}
+      >
+        {textMapMode}
+      </a>
 
       <Link to="/" className="landing-orphanage">
         <FiArrowLeft size={24} color="#FFF" />
