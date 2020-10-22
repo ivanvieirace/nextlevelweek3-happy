@@ -3,6 +3,7 @@ import { StatusBar, StyleSheet } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import OrphanagesMap from "./pages/OrphanagesMap";
+import Onboarding1 from "./pages/Onboarding1";
 import OrphanageDetails from "./pages/OrphanageDetails";
 import SelectMapPosition from "./pages/CreateOrphanage/SelectMapPosition";
 import OrphanageData from "./pages/CreateOrphanage/OrphanageData";
@@ -30,6 +31,11 @@ export default function Routes() {
           headerTitleAlign: "center",
         }}
       >
+        <Screen
+          name="Onboarding1"
+          component={Onboarding1}
+          options={{ headerShown: false }}
+        />
         <Screen name="OrphanagesMap" component={OrphanagesMap} />
         <Screen
           name="OrphanageDetails"
