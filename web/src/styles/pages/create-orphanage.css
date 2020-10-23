@@ -129,10 +129,16 @@ form.create-orphanage-form .input-block .button-select button {
   cursor: pointer;
 }
 
-form.create-orphanage-form .input-block .button-select button.active {
+form.create-orphanage-form .input-block .button-select button.activeGreen {
   background: #edfff6;
   border: 1px solid #a1e9c5;
   color: #37c77f;
+}
+
+form.create-orphanage-form .input-block .button-select button.activeRed {
+  background: #fff3ed;
+  border: 1px solid #e9a6a1;
+  color: #c57f76;
 }
 
 form.create-orphanage-form .input-block .button-select button:first-child {
