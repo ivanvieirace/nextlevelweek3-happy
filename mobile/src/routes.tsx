@@ -20,7 +20,6 @@ export default function Routes() {
         screenOptions={{
           headerShown: true,
           cardStyle: { backgroundColor: "#f2f3f5" },
-          title: "happy",
           headerTintColor: "#fff",
           headerStyle: {
             backgroundColor: "#2993d1",
@@ -30,6 +29,9 @@ export default function Routes() {
             fontSize: 20,
           },
           headerTitleAlign: "center",
+          header: () => (
+            <Header showGoBack={false} showCancel={false} title="happy" />
+          ),
         }}
       >
         <Screen
