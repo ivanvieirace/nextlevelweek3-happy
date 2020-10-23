@@ -1,8 +1,7 @@
 import React from "react";
 import { Feather } from "@expo/vector-icons";
-import background1 from "../images/earthhappy.png";
-import OrphanagesMap from "../pages/OrphanagesMap";
-import Onboarding2 from "./Onboarding2";
+import background1 from "../images/children.png";
+import OrphanagesMap from "./OrphanagesMap";
 import { RectButton } from "react-native-gesture-handler";
 import { useNavigation } from "@react-navigation/native";
 import { Dimensions, Image, StyleSheet, Text, View } from "react-native";
@@ -10,8 +9,8 @@ import { Dimensions, Image, StyleSheet, Text, View } from "react-native";
 export default function Onboarding1() {
   const navigation = useNavigation();
 
-  function handleNavigateToOnboarding2() {
-    return navigation.navigate("Onboarding2");
+  function handleNavigateToOrphanage() {
+    return navigation.navigate("OrphanagesMap");
   }
 
   return (
@@ -21,16 +20,15 @@ export default function Onboarding1() {
       </View>
 
       <View style={styles.textContainer}>
-        <Text style={styles.textContent}>Leve felicidade para o Mundo</Text>
-        <Text style={styles.textSubContent}>
-          Visite Orfanatos e mude o dia de muitas Crianças
+        <Text style={styles.textContent}>
+          Escolha um Orfanato no Mapa e faça uma visita.
         </Text>
       </View>
 
       <View style={styles.footerContainer}>
         <RectButton
           style={styles.nextButton}
-          onPress={handleNavigateToOnboarding2}
+          onPress={handleNavigateToOrphanage}
         >
           <Feather name="arrow-right" size={20} color="#fff" />
         </RectButton>
@@ -46,36 +44,26 @@ const styles = StyleSheet.create({
     height: Dimensions.get("window").height,
   },
   topContainer: {
-    height: "32%",
+    height: "62%",
     alignItems: "center",
     justifyContent: "center",
   },
   imageContent: {
-    marginTop: -10,
-    height: 182,
-    width: 168,
-    padding: 20,
+    height: "93%",
+    width: "70%",
   },
   textContainer: {
-    height: "52%",
+    height: "22%",
   },
   textContent: {
-    marginTop: "2%",
+    marginTop: 10,
     color: "#2473a8",
-    fontSize: 45,
+    fontSize: 30,
     fontFamily: "Nunito_700Bold",
-    paddingLeft: "10%",
-    paddingRight: "30%",
-    lineHeight: 55,
-  },
-  textSubContent: {
-    marginTop: 20,
-    color: "#2473a8",
-    fontSize: 22,
-    fontFamily: "Nunito_700Bold",
-    paddingLeft: "11%",
-    paddingRight: "15%",
-    lineHeight: 32,
+    paddingLeft: "20%",
+    paddingRight: "10%",
+    lineHeight: 40,
+    textAlign: "right",
   },
   footerContainer: {
     height: "16%",
