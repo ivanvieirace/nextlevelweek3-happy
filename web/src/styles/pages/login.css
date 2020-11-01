@@ -7,7 +7,7 @@
   align-items: center;
 }
 
-main.loginBackground {
+#contentContainer main.loginBackground {
   height: 100%;
   width: 65%;
   background: linear-gradient(329.54deg, #2993d1 0%, #0098c7 100%);
@@ -16,6 +16,29 @@ main.loginBackground {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+#contentContainer main .contentLogo {
+  text-align: center;
+}
+
+#contentContainer main .contentLogo img {
+  width: 220px;
+  height: 194px;
+}
+
+#contentContainer footer {
+  margin-top: 10%;
+  text-align: center;
+}
+
+#contentContainer footer h3 {
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+#contentContainer footer h4 {
+  font-size: 21px;
 }
 
 aside.loginForm {

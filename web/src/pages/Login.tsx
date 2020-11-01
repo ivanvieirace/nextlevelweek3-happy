@@ -1,14 +1,13 @@
 import React from "react";
 import "../styles/pages/login.css";
-import mapMarkerImg from "../images/map-marker.svg";
+import logoLogin from "../images/logoLogin.png";
 
 function Login() {
   return (
     <div id="contentContainer">
       <main className="loginBackground">
         <div className="contentLogo">
-          <img src={mapMarkerImg} alt="logoHappy" />
-          <h1>happy</h1>
+          <img src={logoLogin} alt="logoHappy" />
         </div>
         <footer>
           <h3>Fortaleza</h3>
