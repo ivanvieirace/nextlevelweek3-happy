@@ -144,7 +144,7 @@ Check out the [contributing](./CONTRIBUTING.md) page to see the best places to f
 
 ## :closed_book: License
 
-This project is under the MIT license. See the [LICENSE](https://github.com/ivanvieirace/nextlevelweek2/blob/master/LICENSE.md) for more information.
+This project is under the MIT license. See the [LICENSE](https://github.com/ivanvieirace/nextlevelweek3-happy/blob/master/LICENSE.md) for more information.
 
 ---
 
